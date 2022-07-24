@@ -8,6 +8,14 @@ function Home() {
     </div>
   );
 }
+ReactDOM.render(
+  <BrowserRouter>
+    <Route path="/">
+      <Home />
+    </Route>
+  </BrowserRouter>,
+  document.getElementById("root")
+);
 
 function App() {
   return <Home />;
